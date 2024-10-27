@@ -3,11 +3,126 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
-    <link rel="stylesheet" href="style.css">
+    <title>calculator</title>
+    <script href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <link rel="icon" href="images/icon.jpg">
-</head>
+    <link rel="stylesheet" href="calculator.css">
+
+    </head>
 <body>
+    <div class="main">
+        <div class="cal-area">
+            <div class="free-area">
+                <h1>Calculator</h1>
+
+            </div>
+            <hr style="width: 100%;background-color: black;">
+
+            <div class="upper-cal" id="calculation">
+
+            </div>
+            <hr style="width: 100%;background-color: black;">
+
+            
+            
+            <div class="lower-cal">
+                <button onclick="clear()">C</button>
+                <button>%</button>
+                <button>x<sup>2</sup></button>
+                <button>X</button>
+                <button id="button1">1</button>
+                <button onclick="two()">2</button>
+                <button onclick="three()">3</button>
+                <button>/</button>
+                <button onclick="four()">4</button>
+                <button onclick="five()">5</button>
+                <button onclick="six()">6</button>
+                <button>+</button>
+                <button onclick="seven()">7</button>
+                <button onclick="eight()">8</button>
+                <button onclick="nine()">9</button>
+                <button>-</button>
+                <button style="width: 47%;border-radius: 2vh;">0</button>
+                <button>.</button>
+                <button>=</button>
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+
+    <script>
+        class Enterbutton{
+            constructor(number){
+                number=number;
+                madenumber = document.createElement("h1");
+                madenumber.textContent = number;
+                document.getElementById("calculation").appendChild(madenumber);
+                
+
+            }
+
+        }
+        document.getElementById("button1").ad
+//         function one(){
+//     var number = 1;
+//     var madenumber = document.createElement("h1");
+//     madenumber.textContent = number;
+//     document.getElementById("calculation").appendChild(madenumber)
+// }
+// function two(){
+//     var number = 2;
+//     var madenumber = document.createElement("h1");
+//     madenumber.textContent = number;
+//     document.getElementById("calculation").appendChild(madenumber)
+// }
+// function three(){
+//     var number = 3;
+//     var madenumber = document.createElement("h1");
+//     madenumber.textContent = number;
+//     document.getElementById("calculation").appendChild(madenumber)
+// }
+// function four(){
+//     var number = 4;
+//     var madenumber = document.createElement("h1");
+//     madenumber.textContent = number;
+//     document.getElementById("calculation").appendChild(madenumber)
+// }
+// function five(){
+//     var number = 5;
+//     var madenumber = document.createElement("h1");
+//     madenumber.textContent = number;
+//     document.getElementById("calculation").appendChild(madenumber)
+// }
+// function six(){
+//     var number = 6;
+//     var madenumber = document.createElement("h1");
+//     madenumber.textContent = number;
+//     document.getElementById("calculation").appendChild(madenumber)
+// }
+// function seven(){
+//     var number = 7;
+//     var madenumber = document.createElement("h1");
+//     madenumber.textContent = number;
+//     document.getElementById("calculation").appendChild(madenumber)
+// }
+// function eight(){
+//     var number = 8;
+//     var madenumber = document.createElement("h1");
+//     madenumber.textContent = number;
+//     document.getElementById("calculation").appendChild(madenumber)
+// }
+// function nine(){
+//     var number = 9;
+//     var madenumber = document.createElement("h1");
+//     madenumber.textContent = number;
+//     document.getElementById("calculation").appendChild(madenumber)
+// }
+    </script>
+    
 
     
 </body>
